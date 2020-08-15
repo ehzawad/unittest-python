@@ -15,4 +15,14 @@ class TestCombSort(unittest.TestCase):
         negative_ghost_rider = []
         self.assertEqual(combSort(negative_ghost_rider), sorted(negative_ghost_rider, key=int))
 
+    def test_path_4(self):
+        l = [1]
+        self.assertEqual(combSort(l), sorted(l, key=int))
 
+    def test_path_5(self):
+        l = [1, 2]
+        self.assertEqual(combSort(l), sorted(l, key=int))
+
+    def test_path_6(self):
+        l = [2, 1]
+        self.assertEqual(combSort(l), sorted(l, key=int))
